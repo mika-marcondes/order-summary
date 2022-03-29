@@ -21,7 +21,7 @@ body {
 
 .card {
     height: 80vh;
-    width: 420px;
+    width: 375px;
     text-align: center;
     border-radius: 3vh;
     background-color: white;
@@ -33,24 +33,22 @@ body {
 }
 
 .card h1 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 900;
     color: hsl(223, 47%, 23%); /* Dark blue */
 }
 
 .card p {
     margin-top: 3vh;
-    font-size: 18px;
-    line-height: 4vh;
-    color: hsl(224, 23%, 55%); /* Desaturated blue */
+    font-size: 16px;
+    color: #7280a7; /* Desaturated blue */
 }
 
 .imgHeader {
-    width: 420px;
+    width: 375px;
     margin-bottom: 3vh;
     border-radius: 3vh 3vh 0 0;
 }
-
 
 /* Mobile settings */
 @media only screen and (max-width: 425px) {
@@ -74,5 +72,38 @@ body {
 
     .imgHeader {
         width: 85vw;
+    }
+
+    .pricing {
+        display: flex;
+        margin: 4vh 4vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing p {
+        margin: 0;
+    }
+
+    .iconMusic {
+        height: 42px;
+        width: 42px;
+        margin-right: 4vh;
+    }
+
+    .userPlan {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .userPlan h1 {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .userPlan p {
+        font-size: 13px;
     }
 }
