@@ -2,6 +2,7 @@
 
 * {
     box-sizing: content-box;
+    margin: 0;
 }
 
 body {
@@ -20,12 +21,12 @@ body {
 }
 
 .card {
-    height: 80vh;
+    height: auto;
     width: 375px;
     text-align: center;
     border-radius: 3vh;
     background-color: white;
-    box-shadow: 0 4vh 10vh 0 rgb(31, 47, 86, 50%);
+    box-shadow: 0 20px 8vh 0 rgb(31, 47, 86, 35%);
 }
 
 .card h1, p {
@@ -35,19 +36,78 @@ body {
 .card h1 {
     font-size: 20px;
     font-weight: 900;
-    color: hsl(223, 47%, 23%); /* Dark blue */
+    color: #1f2f56; /* Dark blue */
 }
 
 .card p {
-    margin-top: 3vh;
+    margin: 3vh 0 5vh;
     font-size: 16px;
     color: #7280a7; /* Desaturated blue */
 }
 
+#txtCancel {
+    font-weight: 700;
+    font-size: 13px;
+}
+
 .imgHeader {
     width: 375px;
-    margin-bottom: 3vh;
     border-radius: 3vh 3vh 0 0;
+}
+
+.summary {
+    margin: 3vh 5vh;
+}
+
+.summary p {
+    margin: 3vh 0 5vh 0;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.iconMusic {
+    height: 42px;
+    width: 42px;
+    margin-right: 15px;
+}
+
+.userPlan {
+    flex: 1;
+}
+
+.userPlan h1 {
+    color: #1f2f56;
+    font-size: 13px;
+    margin: 0;
+}
+
+.userPlan p {
+    font-size: 12px;
+    margin: 0;
+}
+
+#txtChange {
+    margin: 0;
+    color: #3829e0;
+    font-weight: 700;
+}
+
+.proceedButton {
+    border: 0;
+    border-radius: 1.5vh;
+    box-shadow: 0 10px 10px 0 rgb(31, 47, 86, 20%);
+    color: white;
+    background-color: #3829e0;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    height: 40px;
+    width: 220px;
 }
 
 /* Mobile settings */
@@ -74,11 +134,19 @@ body {
         width: 85vw;
     }
 
+    .summary {
+        margin: 3vh 5vh;
+    }
+
+    .summary p {
+        margin: 3vh 0 5vh 0;
+    }
+
     .pricing {
         display: flex;
-        margin: 4vh 4vh;
         justify-content: center;
         align-items: center;
+        text-align: left;
     }
 
     .pricing p {
@@ -88,22 +156,21 @@ body {
     .iconMusic {
         height: 42px;
         width: 42px;
-        margin-right: 4vh;
+        margin-right: 15px;
     }
 
     .userPlan {
-        display: flex;
         flex: 1;
-        flex-direction: column;
-        text-align: left;
     }
 
     .userPlan h1 {
-        margin: 0;
         font-size: 13px;
+        margin: 0;
     }
 
     .userPlan p {
-        font-size: 13px;
+        font-size: 12px;
+        margin: 0;
     }
+
 }
