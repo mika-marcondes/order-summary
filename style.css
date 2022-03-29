@@ -50,6 +50,12 @@ body {
     font-size: 13px;
 }
 
+#txtCancel:hover {
+    font-weight: 900;
+    color: #1f2f56;
+    cursor: pointer;
+}
+
 .imgHeader {
     width: 375px;
     border-radius: 3vh 3vh 0 0;
@@ -94,12 +100,20 @@ body {
 #txtChange {
     margin: 0;
     color: #3829e0;
+    font-size: 13px;
     font-weight: 700;
+}
+
+#txtChange:hover {
+    color: #756bef;
+    font-weight: 900;
+    cursor: pointer;
 }
 
 .proceedButton {
     border: 0;
     border-radius: 1.5vh;
+    margin-top: 2vh;
     box-shadow: 0 10px 10px 0 rgb(31, 47, 86, 20%);
     color: white;
     background-color: #3829e0;
@@ -107,7 +121,14 @@ body {
     font-weight: 700;
     font-size: 13px;
     height: 40px;
-    width: 220px;
+    width: 300px;
+    transition: 0.2s ease;
+}
+
+.proceedButton:hover {
+    background-color: #756bef;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
 /* Mobile settings */
@@ -173,4 +194,7 @@ body {
         margin: 0;
     }
 
+    .proceedButton {
+        width: 220px;
+    }
 }
