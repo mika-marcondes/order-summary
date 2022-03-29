@@ -6,7 +6,8 @@
 
 body {
     background-image: url("/images/pattern-background-desktop.svg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -18,10 +19,10 @@ body {
 }
 
 .card {
-    height: 80%;
-    width: 52vh;
+    height: 80vh;
+    width: 55vh;
     text-align: center;
-    border-radius: 4vh;
+    border-radius: 3vh;
     background-color: white;
     box-shadow: 0 4vh 10vh 0 rgb(31, 47, 86, 50%);
 }
@@ -43,13 +44,22 @@ body {
 }
 
 .imgHeader {
-    width: 52vh;
-    border-radius: 4vh 4vh 0 0;
+    width: 55vh;
+    border-radius: 3vh 3vh 0 0;
 }
 
 @media only screen and (max-width: 375px) {
     body {
         background-image: url("/images/pattern-background-mobile.svg");
         background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .card {
+        width: 85vw;
+    }
+
+    .imgHeader {
+        width: 85vw;
     }
 }
